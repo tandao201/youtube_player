@@ -291,6 +291,7 @@ class _RawYoutubePlayerState extends State<RawYoutubePlayer>
                         onError: function(error) { window.flutter_inappwebview.callHandler('Errors', error.data); }
                     },
                 });
+		player.setPlaybackQuality('highres');
             }
 
             function sendPlayerStateChange(playerState) {
